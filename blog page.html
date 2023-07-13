@@ -1,0 +1,142 @@
+ <!-- 视频来源：https://www.youtube.com/watch?v=P6YQUAWJbwc&list=PLjwm_8O3suyP5kGKmwS_DM0Hs1j7fshi5&index=2&ab_channel=GreatStack
+How To Make Website Complete Website | College Website Design | Part 2 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website - Courses Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head> 
+
+<!-- 重新本页设计sub-header部分 -->
+<body>
+<section class="sub-header"> 
+    <nav>
+            <a href="home page.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>   <!-- onclick 可以在点击menu图标的时候，隐藏菜单栏内容-->
+                <ul>
+                    <li><a href="home page.html">HOME</a></li>
+                    <li><a href="about page.html">ABOUT</a></li>
+                    <li><a href="course page.html">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="contact page copy.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- onclick 可以在点击menu图标的时候，显示菜单栏内容-->
+    </nav>
+    <h1>Our Certificate & Online Programs</h1>
+</section>
+
+<!-- --------Blog Page content-------- -->
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2>Our Certificate & Online Programs</h2>
+            <p>We provide both degree and certificate programs alternative to traditional college programs, by focusing on practical workplace skills, including learning coding, maching learning, algorithm programming. </p>
+            <br>
+            <p>Students with little-to-no experience can enroll in our online programs to learn the technical and soft skills they need to pursue an tech career.</p>
+            <br>
+            <p>Coding degree programs offer accelerated, intensive technical training in computer programming and other technical skills. </p>
+            <br>
+            <p>We prepare students for web and software developer jobs, and we focus on career skills, especially problem-solving and communication.</p>
+            
+            <div class="comment-box">
+
+                <h3>Leave a Comment </h3>
+
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comments"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="blog-right">
+            <h3>Post Graduate</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Finance</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Animation</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>MBA</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>E-Commerce</span>
+                <span>21</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- 在首页添加Footer部分 1文字，2四个社媒图标 3添加Made with...并插入心形图标-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Having more than 20 years experience, and multipal choices of degree to choose, <br>with over 1,000 professors and tech professionals on campus.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by AITalk Tutorials</p>
+
+</section>
+
+
+
+
+
+<!--加功能：在点击menu图标的时候，显示/隐藏菜单栏内容 JavaScript for Toggle Menu -->
+<script>   
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";   
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+
+</script> 
+       
+</body>
+
+
+</html>

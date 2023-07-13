@@ -1,0 +1,104 @@
+ <!-- 视频来源：https://www.youtube.com/watch?v=P6YQUAWJbwc&list=PLjwm_8O3suyP5kGKmwS_DM0Hs1j7fshi5&index=2&ab_channel=GreatStack
+How To Make Website Complete Website | College Website Design | Part 2 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website - About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head> 
+
+<!-- 重新本页设计sub-header部分 -->
+<body>
+<section class="sub-header"> 
+    <nav>
+            <a href="home page.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>   <!-- onclick 可以在点击menu图标的时候，隐藏菜单栏内容-->
+                <ul>
+                    <li><a href="home page.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="course page.html">COURSE</a></li>
+                    <li><a href="blog page.html">BLOG</a></li>
+                    <li><a href="contact page copy.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- onclick 可以在点击menu图标的时候，显示菜单栏内容-->
+    </nav>
+    <h1>About Us</h1>
+</section>
+
+<!-- --------About US content-------- -->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest online coding university.</h1>
+            <p>Having more than 20 years experience, and multipal choices of degree to choose, with over 1,000 professors and tech professionals on campus.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 在首页添加Footer部分 1文字，2四个社媒图标 3添加Made with...并插入心形图标-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Having more than 20 years experience, and multipal choices of degree to choose, <br>with over 1,000 professors and tech professionals on campus.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by AITalk Tutorials</p>
+
+</section>
+
+
+
+
+
+<!--加功能：在点击menu图标的时候，显示/隐藏菜单栏内容 JavaScript for Toggle Menu -->
+<script>   
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";   
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+
+</script> 
+       
+</body>
+
+
+</html>

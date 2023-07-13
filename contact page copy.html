@@ -1,0 +1,134 @@
+ <!-- 视频来源：https://www.youtube.com/watch?v=P6YQUAWJbwc&list=PLjwm_8O3suyP5kGKmwS_DM0Hs1j7fshi5&index=2&ab_channel=GreatStack
+How To Make Website Complete Website | College Website Design | Part 2 -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website - About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head> 
+
+<!-- 重新本页设计sub-header部分 -->
+<body>
+<section class="sub-header"> 
+    <nav>
+            <a href="home page.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>   <!-- onclick 可以在点击menu图标的时候，隐藏菜单栏内容-->
+                <ul>
+                    <li><a href="home page.html">HOME</a></li>
+                    <li><a href="about page.html">ABOUT</a></li>
+                    <li><a href="course page.html">COURSE</a></li>
+                    <li><a href="blog page.html">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- onclick 可以在点击menu图标的时候，显示菜单栏内容-->
+    </nav>
+    <h1>Contact Us</h1>
+</section>
+
+<!-- --------Contact US content---&1,insert google map; 2,add forms for sending message---- -->
+
+<section class="location">
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50715.96541119394!2d-122.0650673207311!3d37.395795243041476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb645a9d05d3b%3A0x768dfb26dd7cc3a2!2sSunnyvale%2C%20CA!5e0!3m2!1sen!2sus!4v1689188449249!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</section>
+
+
+<section class="contact-us">
+
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>ACB Road 34567, Sunnyvale City,</h5>
+                    <p>California, United States, 90845</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+1 678 900 0000</h5>
+                    <p>Monday to Friday, 9am to 5pm PST</p>
+                </span>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>info@aitalk.com</h5>
+                    <p>Email us</p>
+                </span>
+            </div>
+
+        </div>
+
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">  <!-- 链接php文件，然后下面每一项添加name的属性 -->
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <input type="email" name="email" placeholder="Enter Your Email address" required>
+                <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+
+    </div>  
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- 在首页添加Footer部分 1文字，2四个社媒图标 3添加Made with...并插入心形图标-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Having more than 20 years experience, and multipal choices of degree to choose, <br>with over 1,000 professors and tech professionals on campus.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by AITalk Tutorials</p>
+
+</section>
+
+
+
+
+
+<!--加功能：在点击menu图标的时候，显示/隐藏菜单栏内容 JavaScript for Toggle Menu -->
+<script>   
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";   
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+
+</script> 
+       
+</body>
+
+
+</html>

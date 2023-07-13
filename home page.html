@@ -1,0 +1,210 @@
+ <!-- 视频来源：https://www.youtube.com/watch?v=oYRda7UtuhA
+How To Make Website Using HTML & CSS | Full Responsive Multi Page Website Design Step by Step -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>University Website Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head> 
+
+<body>
+<section class="header"> 
+    <nav>
+            <a href="home page.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i>   <!-- onclick 可以在点击menu图标的时候，隐藏菜单栏内容-->
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="about page.html">ABOUT</a></li>
+                    <li><a href="course page.html">COURSE</a></li>
+                    <li><a href="blog page.html">BLOG</a></li>
+                    <li><a href="contact page copy.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> <!-- onclick 可以在点击menu图标的时候，显示菜单栏内容-->
+    </nav>
+
+<div class="text-box">
+    <h1>World's Biggest University</h1>
+    <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS,
+        <br>
+         Javascript and you are good to go.
+    </p>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+</div>
+
+</section>
+
+
+<!-- 添加主页面Course部分 -->
+
+<section class ="course">
+    <h1>Courses We Offer</h1>
+    <p>We provide thousands of online courses, that you can learn whenever you want in any places around the world.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>In this intensive course, you will learn with tech elites to study the core of software development, including the  object-oriented and functional programming and computer science fundamentals.
+            </p>
+        </div>
+
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>In this degree course, you will learn to study the core of software development, including machine learning programming and algorithms.
+            </p>
+        </div>
+
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>In this post graduation course, you will learn to study the core of software development, including world leading computer science projects.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- 在首页添加新的campus section -->
+
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>We have campuses all around the world.</p>
+    
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png">
+            <div class="layer">    <!--加一层图片-->
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/washington.png">
+            <div class="layer">    <!--加一层图片-->
+                <h3>TOKYO</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/newyork.png">
+            <div class="layer">    <!--加一层图片-->
+                <h3>LOS ANGELES</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- 在首页添加Facilities的部分 -->
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Best facilities providing for students from over the world.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>Beautiful world class libraries on campus.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="images/cafeteria.png">
+                <h3>Cafeteria</h3>
+                <p>Enjoy delicious and healthy food worldwide.</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="images/basketball.png">
+                <h3>Gyms</h3>
+                <p>Do sports 24 hours a day.</p>
+        </div>
+    </div>
+    
+</section>
+
+<!-- 首页testimonial的部分 -->
+<section class="testimonials">
+    <h1>What Our Students Say</h1>
+    <p>"Best computer science experience I ever had."</p> 
+
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="images/user1.jpg">
+            <div>
+                <p>"This is more than learning computer science, but it was a great life experience." </p>
+                <h3>Katy Perry Jr.</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>   <!-- o 表示是一个empty star icon 可去改符号网站查看-->
+            </div>
+        </div>    
+
+        <div class="testimonial-col">
+            <img src="images/user2.jpg">
+            <div>
+                <p>"I became a tech professionals from knowing nothing about coding. Thank you Eduford." </p>
+                <h3>Larry King.</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>   <!-- o 表示是一个half empty icon 可去改符号网站查看 -->
+            </div>    
+        </div>
+    </div>
+</section>
+
+
+<!-- 在首页添加call to action'cta'部分 -->
+<section class="cta">
+    <h1>Enroll Online Courses Now <br>From Anywhere Around The World</h1>
+    <a href="" class="hero-btn">CONTACT US</a>     <!-- 添加Contact US button;重点：直接添加css编辑好的格式”hero-btn" -->
+</section>
+
+
+<!-- 在首页添加Footer部分 1文字，2四个社媒图标 3添加Made with...并插入心形图标-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Having more than 20 years experience, and multipal choices of degree to choose, <br>with over 1,000 professors and tech professionals on campus.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by AITalk Tutorials</p>
+
+</section>
+
+
+
+
+
+<!--加功能：在点击menu图标的时候，显示/隐藏菜单栏内容 JavaScript for Toggle Menu -->
+<script>   
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";   
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px"; 
+    }
+
+</script> 
+       
+</body>
+
+
+</html>
